@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CostaBits | Tecnología en Mar del Plata</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* Variables de colores basadas en tu logo */
+        :root {
+            --bg-color: #050505;
+            --card-bg: #111;
+            --primary-blue: #00a8ff;
+            --dark-blue: #0a4275;
+            --orange: #ff9f43;
+            --text-light: #ffffff;
+            --text-gray: #a0a0a0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        /* Encabezado y Hero Section */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(180deg, var(--dark-blue) 0%, var(--bg-color) 100%);
+        }
+
+        .logo {
+            max-width: 250px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 168, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+
+        .subtitle {
+            color: var(--primary-blue);
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Sección de Productos */
+        .products-section {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .products-section h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--orange);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 40px 20px;
+            border-radius: 15px;
+            border: 1px solid #222;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 168, 255, 0.1);
+            border-color: var(--primary-blue);
+        }
+
+        .card i {
+            font-size: 3rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+        }
+
+        /* Footer y Contacto */
+        footer {
+            background-color: #0a0a0a;
+            padding: 60px 20px 30px;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        .location {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        
+        .location i {
+            color: var(--orange);
+            margin-right: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-light);
+            text-decoration: none;
+            background-color: #1a1a1a;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-blue);
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+        .social-links a.whatsapp:hover { background-color: #25D366; }
+        .social-links a.instagram:hover { background-color: #E1306C; }
+        .social-links a.facebook:hover { background-color: #1877F2; }
+        .social-links a.email:hover { background-color: var(--orange); }
+
+        .copyright {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.jpg" alt="CostaBits Logo" class="logo">
+        <h1>Tu mundo digital, más cerca.</h1>
+        <p class="subtitle">La mejor tecnología al alcance de tus manos</p>
+    </header>
+
+    <section class="products-section">
+        <h2>¿Qué estás buscando?</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Celulares</h3>
+                <p>Últimos modelos, accesorios y servicio técnico especializado.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-gamepad"></i>
+                <h3>Consolas</h3>
+                <p>PlayStation, Xbox, Nintendo y todo para tu setup gamer.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-helicopter"></i>
+                <h3>Drones</h3>
+                <p>Equipos para principiantes y profesionales. Capturá desde el aire.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-laptop"></i>
+                <h3>Insumos</h3>
+                <p>Hardware, periféricos y todo lo que tu PC necesita.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            Mar del Plata, Buenos Aires, Argentina
+        </div>
+        
+        <div class="social-links">
+            <a href="https://wa.me/542235578858?text=Hola%20CostaBits!%20Me%20contacto%20desde%20la%20página%20web." target="_blank" class="whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://instagram.com/costabits" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://web.facebook.com/profile.php?id=61588590600974" target="_blank" class="facebook">
+                <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="mailto:info@costabits.com.ar" class="email">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+        </div>
+
+        <p class="copyright">&copy; 2026 CostaBits. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
